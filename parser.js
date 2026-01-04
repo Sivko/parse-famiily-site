@@ -5,7 +5,7 @@ const path = require("path");
 const { URL } = require("url");
 
 // Количество параллельных потоков для парсинга
-const PARALLEL_THREADS = 3;
+const PARALLEL_THREADS = 10;
 
 // Очередь для синхронизации записи в файл
 let writeQueue = Promise.resolve();
@@ -90,58 +90,111 @@ async function parseQuestionPage(url) {
   // Получаем HTML таблицы как строку
   const tableHtml = table.html() || "";
 
+  console.log(`tableHtml: ${tableHtml}`);
+
   // Используем регулярное выражение для извлечения пар <td>текст</td><td>число</td>
   // Паттерн: <td>([^<]+)</td>\s*<td>(\d+)</td>
-  const pattern = /<td>([^<]+)<\/td>\s*<td>(\d+)<\/td>/g;
+  const patternWithPoints = /<td>([^<]+)<\/td>\s*<td>(\d+)<\/td>/g;
   const matches = [];
   let match;
 
-  console.log(`tableHtml: ${tableHtml}`);
-  while ((match = pattern.exec(tableHtml)) !== null) {
+  while ((match = patternWithPoints.exec(tableHtml)) !== null) {
     matches.push([match[1], match[2]]);
   }
 
-  console.log(`Найдено совпадений в таблице: ${matches.length}`);
+  console.log(`Найдено совпадений с points в таблице: ${matches.length}`);
 
   const seenVariants = new Set(); // Для избежания дублей
 
-  matches.forEach(([variantText, pointsText], idx) => {
-    const variant = variantText.trim();
-    const pointsTextTrimmed = pointsText.trim();
+  // Если найдены пары с points, обрабатываем их
+  if (matches.length > 0) {
+    matches.forEach(([variantText, pointsText], idx) => {
+      const variant = variantText.trim();
+      const pointsTextTrimmed = pointsText.trim();
 
-    console.log(
-      `  Пара ${idx + 1}: Вариант: '${variant}', Очки: '${pointsTextTrimmed}'`
-    );
-
-    // Пропускаем пустые значения
-    if (!variant || !pointsTextTrimmed) {
-      console.log(`  ⚠ Пропущена пара с пустыми значениями`);
-      return;
-    }
-
-    // Преобразуем points в число
-    const points = parseInt(pointsTextTrimmed, 10);
-    if (isNaN(points)) {
       console.log(
-        `  ⚠ Не удалось преобразовать '${pointsTextTrimmed}' в число`
+        `  Пара ${idx + 1}: Вариант: '${variant}', Очки: '${pointsTextTrimmed}'`
       );
-      return;
-    }
 
-    // Проверяем на дубли (по варианту и очкам)
-    const variantKey = `${variant}|${points}`;
-    if (seenVariants.has(variantKey)) {
-      console.log(`  ⚠ Пропущен дубль: ${variant} - ${points}`);
-      return;
-    }
+      // Пропускаем пустые значения
+      if (!variant || !pointsTextTrimmed) {
+        console.log(`  ⚠ Пропущена пара с пустыми значениями`);
+        return;
+      }
 
-    seenVariants.add(variantKey);
-    variantsEn.push({
-      variant: variant,
-      points: points,
+      // Преобразуем points в число
+      const points = parseInt(pointsTextTrimmed, 10);
+      if (isNaN(points)) {
+        console.log(
+          `  ⚠ Не удалось преобразовать '${pointsTextTrimmed}' в число`
+        );
+        return;
+      }
+
+      // Проверяем на дубли (по варианту и очкам)
+      const variantKey = `${variant}|${points}`;
+      if (seenVariants.has(variantKey)) {
+        console.log(`  ⚠ Пропущен дубль: ${variant} - ${points}`);
+        return;
+      }
+
+      seenVariants.add(variantKey);
+      variantsEn.push({
+        variant: variant,
+        points: points,
+      });
+      console.log(`  ✓ Добавлено: ${variant} - ${points}`);
     });
-    console.log(`  ✓ Добавлено: ${variant} - ${points}`);
-  });
+  } else {
+    // Если points не указаны, парсим только варианты ответов
+    console.log(`Points не найдены, парсим только варианты ответов`);
+    
+    // Паттерн для поиска вариантов ответов в строках tbody: <tr><td>текст</td>
+    // Также учитываем случаи без закрывающего тега: <td>текст<td>
+    const patternWithoutPoints = /<tr>\s*<td>([^<]+)<\/?td>/g;
+    const variantMatches = [];
+    let variantMatch;
+
+    while ((variantMatch = patternWithoutPoints.exec(tableHtml)) !== null) {
+      const variant = variantMatch[1].trim();
+      if (variant) {
+        variantMatches.push(variant);
+      }
+    }
+
+    // Если не нашли через первый паттерн, пробуем более простой: <td>текст</td> или <td>текст<td>
+    if (variantMatches.length === 0) {
+      const simplePattern = /<td>([^<]+)<\/?td>/g;
+      while ((variantMatch = simplePattern.exec(tableHtml)) !== null) {
+        const variant = variantMatch[1].trim();
+        // Пропускаем заголовки таблицы (Answer, Points и т.д.)
+        if (variant && !variant.match(/^(Answer|Points)$/i)) {
+          variantMatches.push(variant);
+        }
+      }
+    }
+
+    console.log(`Найдено вариантов ответов без points: ${variantMatches.length}`);
+
+    if (variantMatches.length > 0) {
+      // Присваиваем очки по убыванию: первый вариант = количество вариантов, второй = количество - 1, и т.д.
+      variantMatches.forEach((variant, idx) => {
+        // Проверяем на дубли (только по варианту, так как points будут разные)
+        if (seenVariants.has(variant)) {
+          console.log(`  ⚠ Пропущен дубль: ${variant}`);
+          return;
+        }
+
+        const points = variantMatches.length - idx; // Первый = max, последний = 1
+        seenVariants.add(variant);
+        variantsEn.push({
+          variant: variant,
+          points: points,
+        });
+        console.log(`  ✓ Добавлено: ${variant} - ${points} (по убыванию)`);
+      });
+    }
+  }
 
   if (variantsEn.length === 0) {
     console.log(`Не найдены варианты ответов на странице ${url}`);

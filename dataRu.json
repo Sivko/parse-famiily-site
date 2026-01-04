@@ -10639,5 +10639,287 @@
         "points": 10
       }
     ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-someone-who-is-famous-for-having-a-big-mouth/",
+    "question_en": "Name someone who is famous for having a big mouth.",
+    "question": "Назовите человека, который известен тем, что у него большой рот.",
+    "variants": [
+      {
+        "variant": "ДЖОН РИВЕРС",
+        "points": 28
+      },
+      {
+        "variant": "ДЖИМ КАРРИ",
+        "points": 21
+      },
+      {
+        "variant": "КАНЬЕ ВЕСТ",
+        "points": 18
+      },
+      {
+        "variant": "ОПРАХ ВИНФРЕЙ",
+        "points": 16
+      },
+      {
+        "variant": "ХОУАРД СТЕРН",
+        "points": 12
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/tell-me-something-you-might-do-the-moment-you-get-home-from-work/",
+    "question_en": "Tell me something you might do the moment you get home from work.",
+    "question": "Расскажите мне, что вы можете сделать, как только вернетесь домой с работы.",
+    "variants": [
+      {
+        "variant": "СНИМИТЕ ОБУВЬ",
+        "points": 37
+      },
+      {
+        "variant": "RELAX",
+        "points": 21
+      },
+      {
+        "variant": "ДУШ",
+        "points": 18
+      },
+      {
+        "variant": "СМЕНИТЬ ОДЕЖДУ",
+        "points": 14
+      },
+      {
+        "variant": "ЕШЬТЕ ЕДУ",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-associate-with-california/",
+    "question_en": "Name something you associate with California.",
+    "question": "Назовите то, что ассоциируется у вас с Калифорнией.",
+    "variants": [
+      {
+        "variant": "ПЛЯЖИ",
+        "points": 25
+      },
+      {
+        "variant": "ХОЛЛИВУД",
+        "points": 25
+      },
+      {
+        "variant": "SUNSHINE",
+        "points": 16
+      },
+      {
+        "variant": "СЁРФИНГ",
+        "points": 15
+      },
+      {
+        "variant": "CELEBRITIES",
+        "points": 10
+      },
+      {
+        "variant": "ЗЕМЛЕТРЯСЕНИЯ",
+        "points": 9
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-might-do-before-moving/",
+    "question_en": "Name something you might do before moving.",
+    "question": "Назовите то, что вы могли бы сделать перед переездом.",
+    "variants": [
+      {
+        "variant": "ПАК",
+        "points": 54
+      },
+      {
+        "variant": "ОЧИСТИТЬ",
+        "points": 19
+      },
+      {
+        "variant": "ВЫБРАСЫВАТЬ ВЕЩИ",
+        "points": 12
+      },
+      {
+        "variant": "УСТРОЙТЕ ВЕЧЕРИНКУ",
+        "points": 9
+      },
+      {
+        "variant": "ДОМ КРАСКИ",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-a-popular-tv-game-show/",
+    "question_en": "Name a popular TV game show.",
+    "question": "Назовите популярное телевизионное игровое шоу.",
+    "variants": [
+      {
+        "variant": "СЕМЕЙНАЯ ССОРА",
+        "points": 49
+      },
+      {
+        "variant": "ЦЕНА ПРАВИЛЬНАЯ",
+        "points": 24
+      },
+      {
+        "variant": "КОЛЕСО ФОРТУНЫ",
+        "points": 14
+      },
+      {
+        "variant": "JEOPARDY",
+        "points": 8
+      },
+      {
+        "variant": "СДЕЛКА ИЛИ НЕ СДЕЛКА",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/tell-me-something-you-might-do-on-a-sunday/",
+    "question_en": "Tell me something you might do on a Sunday.",
+    "question": "Расскажите мне, чем бы вы могли заняться в воскресенье.",
+    "variants": [
+      {
+        "variant": "ЦЕРКОВЬ",
+        "points": 48
+      },
+      {
+        "variant": "RELAX",
+        "points": 21
+      },
+      {
+        "variant": "СМОТРЕТЬ ФУТБОЛ",
+        "points": 16
+      },
+      {
+        "variant": "СПАТЬ В",
+        "points": 11
+      },
+      {
+        "variant": "ЧАСОВОЕ ТЕЛЕВИДЕНИЕ",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-a-situation-where-you-might-need-to-wear-ear-plugs/",
+    "question_en": "Name a situation where you might need to wear ear plugs.",
+    "question": "Назовите ситуацию, в которой вам может понадобиться использовать беруши.",
+    "variants": [
+      {
+        "variant": "КОНЦЕРТ",
+        "points": 27
+      },
+      {
+        "variant": "ДИСТАНЦИЯ СТРЕЛЬБЫ",
+        "points": 18
+      },
+      {
+        "variant": "АВИАЛАЙНЕР",
+        "points": 16
+      },
+      {
+        "variant": "СТРОИТЕЛЬНАЯ ПЛОЩАДКА",
+        "points": 12
+      },
+      {
+        "variant": "АВТОГОНКИ",
+        "points": 10
+      },
+      {
+        "variant": "FACTORY",
+        "points": 9
+      },
+      {
+        "variant": "СПАЛЬНИК",
+        "points": 8
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-would-not-want-to-find-under-a-christmas-tree/",
+    "question_en": "Name something you would NOT want to find under a Christmas tree.",
+    "question": "Назовите то, что вы НЕ хотели бы найти под рождественской елкой.",
+    "variants": [
+      {
+        "variant": "УГОЛЬ",
+        "points": 51
+      },
+      {
+        "variant": "RODENT",
+        "points": 19
+      },
+      {
+        "variant": "НИЧЕГО",
+        "points": 15
+      },
+      {
+        "variant": "КОСТЮМЫ",
+        "points": 9
+      },
+      {
+        "variant": "SNAKE",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-a-popular-christmas-movie/",
+    "question_en": "Name a popular Christmas movie.",
+    "question": "Назовите популярный рождественский фильм.",
+    "variants": [
+      {
+        "variant": "РОЖДЕСТВЕНСКАЯ ИСТОРИЯ",
+        "points": 39
+      },
+      {
+        "variant": "ОДИНОКИЙ ДОМ",
+        "points": 18
+      },
+      {
+        "variant": "ЧУДО НА 34-Й УЛИЦЕ",
+        "points": 8
+      },
+      {
+        "variant": "МОРОЗНЫЙ СНЕГОВИК",
+        "points": 8
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-might-do-while-visiting-new-york-city/",
+    "question_en": "Name something you might do while visiting New York City.",
+    "question": "Назовите то, чем вы могли бы заняться во время посещения Нью-Йорка.",
+    "variants": [
+      {
+        "variant": "ПОСЕТИТЬ СТАТУЮ СВОБОДЫ",
+        "points": 30
+      },
+      {
+        "variant": "МАГАЗИН",
+        "points": 25
+      },
+      {
+        "variant": "ПОСМОТРЕТЬ КВАДРАТ ВРЕМЕНИ",
+        "points": 13
+      },
+      {
+        "variant": "БРОДВЕЙСКАЯ ПЬЕСА",
+        "points": 12
+      },
+      {
+        "variant": "ЭМПАЙР-СТЕЙТ-БИЛДИНГ",
+        "points": 11
+      },
+      {
+        "variant": "ОСМОТР ДОСТОПРИМЕЧАТЕЛЬНОСТЕЙ",
+        "points": 9
+      }
+    ]
   }
 ]

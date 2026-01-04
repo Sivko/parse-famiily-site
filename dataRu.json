@@ -10921,5 +10921,333 @@
         "points": 9
       }
     ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-hate-about-your-morning-commute/",
+    "question_en": "Name something you hate about your morning commute.",
+    "question": "Назовите то, что вы ненавидите в своей утренней поездке.",
+    "variants": [
+      {
+        "variant": "ТРАФИК",
+        "points": 52
+      },
+      {
+        "variant": "ВОЖДЕНИЕ",
+        "points": 7
+      },
+      {
+        "variant": "ПРОБУЖДЕНИЕ",
+        "points": 5
+      },
+      {
+        "variant": "ПЛОХАЯ ПОГОДА",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-that-makes-mammals-unique-from-other-animals/",
+    "question_en": "Name something that makes mammals unique from other animals.",
+    "question": "Назовите то, что отличает млекопитающих от других животных.",
+    "variants": [
+      {
+        "variant": "ТЕПЛАЯ КРОВЬ",
+        "points": 32
+      },
+      {
+        "variant": "ЖИВОЕ РОЖДЕНИЕ",
+        "points": 25
+      },
+      {
+        "variant": "ВОЛОСЫ ИЛИ МЕХ",
+        "points": 24
+      },
+      {
+        "variant": "ПРОИЗВОДИТЬ МОЛОКО",
+        "points": 12
+      },
+      {
+        "variant": "ВНУТРЕННЯЯ ГЕСТАЦИЯ",
+        "points": 7
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-would-not-want-to-buy-in-front-of-your-parents/",
+    "question_en": "Name something you would not want to buy in front of your parents.",
+    "question": "Назовите то, что вы не хотели бы покупать в присутствии родителей.",
+    "variants": [
+      {
+        "variant": "НИЖНЕЕ БЕЛЬЕ",
+        "points": 40
+      },
+      {
+        "variant": "АЛКОГОЛЬ",
+        "points": 28
+      },
+      {
+        "variant": "ПИЛЮЛЯ",
+        "points": 19
+      },
+      {
+        "variant": "СИГАРЕТЫ",
+        "points": 13
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/tell-me-something-you-might-do-if-youre-feeling-blue/",
+    "question_en": "Tell me something you might do if you're feeling blue.",
+    "question": "Расскажите мне, что вы можете сделать, если вам плохо.",
+    "variants": [
+      {
+        "variant": "CRY",
+        "points": 31
+      },
+      {
+        "variant": "СОН",
+        "points": 22
+      },
+      {
+        "variant": "ЕШЬТЕ",
+        "points": 21
+      },
+      {
+        "variant": "СЛУШАТЬ МУЗЫКУ",
+        "points": 14
+      },
+      {
+        "variant": "ПОЗВОНИТЕ ДРУГУ",
+        "points": 12
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-a-summer-job-a-teenager-might-have/",
+    "question_en": "Name a summer job a teenager might have.",
+    "question": "Назовите летнюю работу, которая может быть у подростка.",
+    "variants": [
+      {
+        "variant": "LIFEGUARD",
+        "points": 33
+      },
+      {
+        "variant": "РАБОТНИК ФАСТФУДА",
+        "points": 24
+      },
+      {
+        "variant": "ЛАНДШАФТНЫЙ ДИЗАЙН",
+        "points": 13
+      },
+      {
+        "variant": "НЯНЯ",
+        "points": 11
+      },
+      {
+        "variant": "WAITER",
+        "points": 8
+      },
+      {
+        "variant": "РОЗНИЧНАЯ ТОРГОВЛЯ",
+        "points": 6
+      },
+      {
+        "variant": "СОКОВЫЖИМАЛКА ДЛЯ МОРОЖЕНОГО",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/past-or-present-name-a-host-of-a-daytime-talk-show/",
+    "question_en": "Past or present, name a host of a daytime talk show.",
+    "question": "Назовите ведущего дневного ток-шоу в прошлом или настоящем.",
+    "variants": [
+      {
+        "variant": "OPRAH",
+        "points": 34
+      },
+      {
+        "variant": "ЭЛЕН ДЕДЖЕНЕРЕС",
+        "points": 30
+      },
+      {
+        "variant": "МАУРИ ПОВИЧ",
+        "points": 18
+      },
+      {
+        "variant": "СТИВ ХАРВЕЙ",
+        "points": 11
+      },
+      {
+        "variant": "ДЖЕРРИ СПРИНГЕР",
+        "points": 7
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-might-see-at-a-yard-sale/",
+    "question_en": "Name something you might see at a yard sale.",
+    "question": "Назовите то, что вы можете увидеть на дворовой распродаже.",
+    "variants": [
+      {
+        "variant": "КОСТЮМЫ",
+        "points": 57
+      },
+      {
+        "variant": "МЕБЕЛЬ",
+        "points": 20
+      },
+      {
+        "variant": "БЛЮДА",
+        "points": 9
+      },
+      {
+        "variant": "ИГРУШКИ",
+        "points": 8
+      },
+      {
+        "variant": "КНИГИ",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-an-animal-that-might-make-a-good-first-pet/",
+    "question_en": "Name an animal that might make a good first pet.",
+    "question": "Назовите животное, которое может стать хорошим первым питомцем.",
+    "variants": [
+      {
+        "variant": "РЫБА",
+        "points": 41
+      },
+      {
+        "variant": "СОБАКИ",
+        "points": 38
+      },
+      {
+        "variant": "CAT",
+        "points": 13
+      },
+      {
+        "variant": "ХАМСТЕРС",
+        "points": 8
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-an-outdated-form-of-communication/",
+    "question_en": "Name an outdated form of communication.",
+    "question": "Назовите устаревшую форму общения.",
+    "variants": [
+      {
+        "variant": "ПИСЬМА",
+        "points": 27
+      },
+      {
+        "variant": "PAGER",
+        "points": 24
+      },
+      {
+        "variant": "ТЕЛЕГРАММА",
+        "points": 14
+      },
+      {
+        "variant": "ТЕЛЕГРАФ",
+        "points": 11
+      },
+      {
+        "variant": "ПОЧТА",
+        "points": 10
+      },
+      {
+        "variant": "PAYPHONE",
+        "points": 8
+      },
+      {
+        "variant": "КОД МОРСА",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-a-place-you-go-to-hear-music/",
+    "question_en": "Name a place you go to hear music.",
+    "question": "Назовите место, куда вы ходите послушать музыку.",
+    "variants": [
+      {
+        "variant": "КОНЦЕРТЫ",
+        "points": 46
+      },
+      {
+        "variant": "NIGHTCLUB",
+        "points": 22
+      },
+      {
+        "variant": "БАРС",
+        "points": 16
+      },
+      {
+        "variant": "АВТОМОБИЛЬ",
+        "points": 9
+      },
+      {
+        "variant": "ОПЕРА",
+        "points": 7
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-a-couple-might-fight-about/",
+    "question_en": "Name something a couple might fight about.",
+    "question": "Назовите то, из-за чего пара может поссориться.",
+    "variants": [
+      {
+        "variant": "ДЕНЬГИ",
+        "points": 59
+      },
+      {
+        "variant": "ЛЮБОВЬ ЖИЗНЬ",
+        "points": 15
+      },
+      {
+        "variant": "ИНФИДЕЛИТИ",
+        "points": 11
+      },
+      {
+        "variant": "СЧЕТА",
+        "points": 9
+      },
+      {
+        "variant": "ВОСПИТАНИЕ ДЕТЕЙ",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "url": "https://www.familyfeudfriends.com/name-something-you-might-see-at-a-renaissance-fair/",
+    "question_en": "Name something you might see at a renaissance fair.",
+    "question": "Назовите то, что можно увидеть на ярмарке эпохи Возрождения.",
+    "variants": [
+      {
+        "variant": "KNIGHTS",
+        "points": 31
+      },
+      {
+        "variant": "FOOD",
+        "points": 13
+      },
+      {
+        "variant": "КОСТЮМЫ",
+        "points": 12
+      },
+      {
+        "variant": "ДЖОУСТИНГ",
+        "points": 11
+      },
+      {
+        "variant": "SWORDS",
+        "points": 10
+      }
+    ]
   }
 ]
